@@ -26,5 +26,5 @@ if st.button("Predict"):
     p = pkg["model"].predict_proba(row)[0][1]
     st.metric("Collapse risk tomorrow", f"{p:.1%}")
     st.warning("High risk") if p > 0.5 else st.success("Lower risk")
-    st.caption("Built by Idris Shedrach Ojonimi | Divineshed Digital")
+st.caption("Built by Idris Shedrach Ojonimi | Divineshed Digital")
 st.caption("Contact: divineshedmodel@gmail.com")
